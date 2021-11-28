@@ -9,7 +9,7 @@ function App() {
       {/* Switch -> Routes */}
       <Routes>
         {/* componet Home으로 가는 라우트 */}
-        <Route path="/" element={<Home />} />
+        <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
