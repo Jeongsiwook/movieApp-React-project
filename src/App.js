@@ -5,7 +5,7 @@ import Home from "./routes/Home";
 function App() {
   return (
     // Router -> BrowserRouter
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       {/* Switch -> Routes */}
       <Routes>
         {/* componet Home으로 가는 라우트 */}
